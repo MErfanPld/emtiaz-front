@@ -1,1 +1,763 @@
-PLACEHOLDER
+<!DOCTYPE html>
+
+<html class="scroll-smooth" dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>مجله و مقالات تخصصی | مجتمع تخصصی املاک امتیاز</title>
+<!-- Persian Typography (Vazirmatn) & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            // Established Luxury Brand Palette: Deep Navy & Warm Ivory & Champagne Gold
+            primary: "#172554",                /* Deep Navy Blue */
+            "primary-container": "#1e3a8a",    /* Rich Navy Midtone */
+            "on-primary": "#ffffff",
+            "on-primary-container": "#dbeafe",
+            secondary: "#c6a66b",              /* Champagne Architectural Gold */
+            "secondary-container": "#fef3c7",  /* Warm Gold Tint */
+            "on-secondary": "#1c1917",
+            "on-secondary-container": "#78350f",
+            background: "#f5f2eb",             /* Tactile Warm Ivory Base */
+            "on-background": "#292d2b",        /* Editorial Charcoal */
+            surface: "#ffffff",                /* Crisp Pure White */
+            "on-surface": "#292d2b",           /* Body Charcoal */
+            "surface-container": "#fbf9f5",    /* Soft Ivory Hover Surface */
+            "surface-container-high": "#efece3",/* Card Outline Warmth */
+            "surface-container-lowest": "#ffffff",
+            "surface-variant": "#ece7dd",
+            "on-surface-variant": "#57534e",   /* Muted Charcoal Text */
+            outline: "#ddd6c7",                /* Architectural Hairline Border */
+            "outline-variant": "#e7e2d6",      /* Subtle Dividers */
+            tertiary: "#1e293b",               /* Slate Dark Slate Footer */
+            "on-tertiary": "#f8fafc",
+            "tertiary-container": "#0f172a",
+            "on-tertiary-container": "#cbd5e1"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "9999px"
+          },
+          fontFamily: {
+            "display-hero": ["Vazirmatn", "sans-serif"],
+            "display-hero-mobile": ["Vazirmatn", "sans-serif"],
+            "headline-lg": ["Vazirmatn", "sans-serif"],
+            "headline-lg-mobile": ["Vazirmatn", "sans-serif"],
+            "headline-md": ["Vazirmatn", "sans-serif"],
+            "headline-sm": ["Vazirmatn", "sans-serif"],
+            "title-md": ["Vazirmatn", "sans-serif"],
+            "body-lg": ["Vazirmatn", "sans-serif"],
+            "body-md": ["Vazirmatn", "sans-serif"],
+            "body-sm": ["Vazirmatn", "sans-serif"],
+            "label-lg": ["Vazirmatn", "sans-serif"],
+            "label-md": ["Vazirmatn", "sans-serif"],
+            "label-sm": ["Vazirmatn", "sans-serif"]
+          },
+          fontSize: {
+            "display-hero": ["44px", { lineHeight: "64px", fontWeight: "800" }],
+            "display-hero-mobile": ["28px", { lineHeight: "42px", fontWeight: "800" }],
+            "headline-lg": ["32px", { lineHeight: "48px", fontWeight: "700" }],
+            "headline-lg-mobile": ["24px", { lineHeight: "36px", fontWeight: "700" }],
+            "headline-md": ["22px", { lineHeight: "34px", fontWeight: "600" }],
+            "headline-sm": ["18px", { lineHeight: "28px", fontWeight: "600" }],
+            "title-md": ["16px", { lineHeight: "26px", fontWeight: "600" }],
+            "body-lg": ["15px", { lineHeight: "26px", fontWeight: "400" }],
+            "body-md": ["13.5px", { lineHeight: "24px", fontWeight: "400" }],
+            "body-sm": ["12px", { lineHeight: "20px", fontWeight: "400" }],
+            "label-lg": ["14px", { lineHeight: "20px", fontWeight: "600" }],
+            "label-md": ["12px", { lineHeight: "18px", fontWeight: "500" }],
+            "label-sm": ["11px", { lineHeight: "16px", fontWeight: "600" }]
+          },
+          boxShadow: {
+            'luxury': '0 4px 20px -2px rgba(23, 37, 84, 0.05), 0 2px 6px -1px rgba(198, 166, 107, 0.04)',
+            'luxury-hover': '0 16px 36px -6px rgba(23, 37, 84, 0.10), 0 4px 12px -2px rgba(198, 166, 107, 0.16)'
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-fill {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-secondary selection:text-surface overflow-x-hidden min-h-screen flex flex-col justify-between">
+<!-- ========================================================================= -->
+<!-- 1. TOP NAVIGATION BAR (Exact approved Brand Anchor) -->
+<!-- ========================================================================= -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/95 backdrop-blur-md border-b border-outline/50 shadow-sm transition-all duration-200">
+<div class="w-full max-w-[1320px] mx-auto px-6 md:px-12 flex items-center justify-between h-20 rtl">
+<!-- Brand Logo & Identity -->
+<a class="flex items-center gap-3 group focus:outline-none" href="#">
+<div class="w-10 h-10 rounded border border-secondary/60 bg-primary flex items-center justify-center text-secondary shadow-sm transition-transform duration-200 group-hover:scale-105">
+<span class="material-symbols-outlined text-secondary text-2xl" data-icon="domain">domain</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight">مجتمع تخصصی املاک امتیاز</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium tracking-wide">مرکز سرمایه‌گذاری و معاملات املاک لوکس</span>
+</div>
+</a>
+<!-- Desktop Nav Cluster -->
+<nav class="hidden lg:flex items-center gap-8 text-right">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">صفحه اصلی</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">معرفی مجتمع</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">دفاتر املاک</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">املاک</a>
+<!-- ACTIVE NAVIGATION: مقالات -->
+<a class="font-label-lg text-label-lg text-primary font-bold border-b-2 border-secondary pb-1 flex items-center gap-1.5" href="#">
+<span>مقالات</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">تماس با ما</a>
+</nav>
+<!-- Trailing Action: Phone & Inquiry CTA -->
+<div class="flex items-center gap-4">
+<a class="hidden sm:flex items-center gap-2 font-label-md text-label-md text-primary font-bold bg-surface-container px-3.5 py-2 rounded border border-outline hover:border-secondary transition-colors" href="tel:02122000000">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="call">call</span>
+<span class="tracking-wider">۰۲۱-۲۲۰۰۰۰۰۰</span>
+</a>
+<a class="inline-flex items-center justify-center font-label-lg text-label-lg font-semibold bg-primary text-on-primary hover:bg-primary-container px-5 py-2.5 rounded border border-secondary/40 shadow-sm transition-all duration-200 active:scale-95" href="#" style="background-color: rgb(252, 42, 42);">
+          تماس با مجتمع
+        </a>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- ========================================================================= -->
+<!-- 2. BREADCRUMB NAVIGATION -->
+<!-- ========================================================================= -->
+<div class="w-full max-w-[1320px] mx-auto px-6 md:px-12 pt-6 pb-2">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-base" data-icon="home">home</span>
+<span>صفحه اصلی</span>
+</a>
+<span class="text-outline">/</span>
+<span class="text-primary font-semibold">مقالات و راهنماهای ملکی</span>
+</nav>
+</div>
+<!-- ========================================================================= -->
+<!-- 3. EDITORIAL HERO SECTION -->
+<!-- ========================================================================= -->
+<section class="relative w-full py-12 md:py-16 overflow-hidden">
+<!-- Architectural Subtle Grid Background -->
+<div class="absolute inset-0 bg-gradient-to-b from-background via-surface-container-high/40 to-background pointer-events-none -z-10"></div>
+<div class="max-w-[1320px] mx-auto px-6 md:px-12">
+<div class="text-center max-w-3xl mx-auto space-y-4">
+<!-- Eyebrow Badge -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded bg-surface border border-secondary/40 shadow-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md font-semibold text-primary">مجله املاک امتیاز</span>
+<span class="text-outline">|</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">مرجع تحلیلی و حقوقی مسکن</span>
+</div>
+<!-- Main Editorial Headline -->
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-primary tracking-tight">
+            دانش بیشتر، <span class="text-secondary relative inline-block">انتخاب بهتر<span class="absolute -bottom-1 inset-x-0 h-0.5 bg-secondary/30 rounded-full"></span></span> در بازار ملک
+          </h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+            در مقالات املاک امتیاز، با نکات کاربردی خرید، فروش، رهن و اجاره، آشنایی با بازار مسکن و راهنمای انتخاب ملک مناسب همراه شوید.
+          </p>
+<!-- Search Input Architecture -->
+<div class="pt-4 max-w-xl mx-auto">
+<form action="#" class="relative flex items-center bg-surface p-1.5 rounded border border-outline shadow-luxury focus-within:border-primary focus-within:ring-2 focus-within:ring-secondary/25 transition-all" method="GET">
+<span class="material-symbols-outlined text-on-surface-variant pr-3 text-2xl" data-icon="search">search</span>
+<input class="w-full bg-transparent border-none text-on-surface placeholder:text-on-surface-variant/70 font-body-md text-body-md focus:ring-0 focus:outline-none px-2 py-2" placeholder="جست‌وجو در مقالات، قوانین ملکی، قراردادها..." type="text"/>
+<button class="bg-primary text-on-primary hover:bg-primary-container px-6 py-2.5 rounded font-label-lg text-label-lg font-semibold flex items-center gap-1.5 transition-all duration-200 border border-secondary/30 shrink-0 shadow-sm" type="submit" style="background-color: rgb(252, 42, 42);">
+<span>جست‌وجو</span>
+</button>
+</form>
+<div class="flex items-center justify-center gap-2 mt-3 font-label-sm text-label-sm text-on-surface-variant">
+<span>جستجوهای پرطرفدار:</span>
+<a class="hover:text-primary underline decoration-secondary decoration-1 underline-offset-4" href="#">نکات سند تک‌برگ</a>
+<span>•</span>
+<a class="hover:text-primary underline decoration-secondary decoration-1 underline-offset-4" href="#">قوانین رهن و اجاره</a>
+<span>•</span>
+<a class="hover:text-primary underline decoration-secondary decoration-1 underline-offset-4" href="#">پیش‌خرید آپارتمان</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 4. FEATURED ARTICLE SECTION (مقاله منتخب) -->
+<!-- ========================================================================= -->
+<section class="max-w-[1320px] mx-auto px-6 md:px-12 py-6">
+<div class="flex items-center justify-between mb-6 pb-2 border-b border-outline/60">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-6 bg-primary rounded-xs"></div>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">مقاله منتخب تحریریه</h2>
+</div>
+<span class="font-label-md text-label-md text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-lg" data-icon="star">star</span>
+          ویژه بررسی هفتگی
+        </span>
+</div>
+<!-- Featured Bento Card -->
+<div class="bg-surface rounded border border-outline shadow-luxury hover:shadow-luxury-hover transition-all duration-300 overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-0 group">
+<!-- Architectural Image Container (Left on RTL visual flow, 7 cols) -->
+<div class="lg:col-span-7 relative h-72 sm:h-96 lg:h-auto overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700 ease-out" data-alt="An expansive, high-end architectural luxury penthouse apartment interior overlooking Tehran mountains during soft morning golden hour. Features floor-to-ceiling clean glass windows, warm oak woodwork, polished travertine stone flooring, and understated contemporary furniture with muted navy and champagne gold textiles in natural architectural sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeIP4OUUmBJa7U9LIUCALTF41Sl67DWShStjbiqKhJ9WF7TSajwqGsOkQzI-8xytoCD0xEL3uCB67U9fJSIeysiM4rq_xpdK8QZhWzWtlUY_CARj_JANzCyWxbNizrswEmWFbkyTgUMzwgkMpn8e6zX-oksA-TuVt6UUySCRh9rPpXMrQlN48H_alHN8ZD0UYoZ_Q4hhUZRM78rthgAVNvifj9VjNiA0IA-xw0kj9cqtLcgnkF9SjApw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent lg:hidden"></div>
+<!-- Corner Architectural Badge -->
+<div class="absolute top-4 right-4 bg-surface/95 backdrop-blur-sm border border-secondary/50 px-3 py-1.5 rounded flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="verified">verified</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">راهنمای کارشناسی</span>
+</div>
+</div>
+<!-- Editorial Content Container (5 cols) -->
+<div class="lg:col-span-5 p-8 lg:p-10 flex flex-col justify-between bg-surface border-t lg:border-t-0 lg:border-r border-outline">
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 rounded bg-secondary-container/60 border border-secondary/30 font-label-sm text-label-sm text-on-secondary-container font-semibold">
+                راهنمای خرید ملک
+              </span>
+<span class="text-outline">•</span>
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-base" data-icon="schedule">schedule</span>
+                ۶ دقیقه مطالعه
+              </span>
+</div>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary font-bold hover:text-primary-container transition-colors leading-tight">
+              پیش از خرید آپارتمان، چه نکاتی را باید بررسی کنیم؟
+            </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              از بررسی مدارک و وضعیت سند تا ارزیابی موقعیت، امکانات ساختمان و هزینه‌های جانبی؛ آشنایی با نکات کلیدی می‌تواند به تصمیم‌گیری آگاهانه‌تر در خرید ملک کمک کند.
+            </p>
+<!-- Key Takeaways Snippet -->
+<div class="bg-surface-container p-4 rounded border-r-2 border-secondary space-y-2 mt-4">
+<span class="font-label-sm text-label-sm text-primary font-bold block">سرفصل‌های محوری این تحلیل:</span>
+<ul class="font-body-sm text-body-sm text-on-surface-variant space-y-1.5">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span>
+<span>بررسی وضعیت ثبتی و استعلامات شهرداری</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span>
+<span>ارزیابی استحکام بنا و تأسیسات زیربنایی</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Bottom Meta & Action -->
+<div class="pt-8 border-t border-outline/50 flex flex-wrap items-center justify-between gap-4 mt-6">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded bg-surface-container-high border border-outline flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg" data-icon="edit_note">edit_note</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold block">تحریریه املاک امتیاز</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">۱۵ مهر ۱۴۰۵</span>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary hover:bg-primary-container px-5 py-2.5 rounded font-label-lg text-label-lg font-semibold transition-all border border-secondary/30 group-hover:border-secondary shadow-sm" href="#" style="background-color: rgb(252, 42, 42);">
+<span>مطالعه مقاله</span>
+<span class="material-symbols-outlined text-lg transition-transform group-hover:-translate-x-1" data-icon="arrow_left_alt">arrow_left_alt</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 5. CATEGORY TABS / FILTER CHIPS (موضوعات مقالات) -->
+<!-- ========================================================================= -->
+<section class="max-w-[1320px] mx-auto px-6 md:px-12 pt-10 pb-4">
+<div class="bg-surface p-6 rounded border border-outline shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="tune">tune</span>
+<h3 class="font-title-md text-title-md text-primary font-bold">دسته‌بندی موضوعات تخصصی</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">نمایش براساس اولویت مطالعاتی خریداران و سرمایه‌گذاران</span>
+</div>
+<!-- Filter Chips Container -->
+<div class="flex flex-wrap items-center gap-2.5">
+<!-- Active Chip -->
+<button class="bg-primary text-on-primary px-4 py-2 rounded-full font-label-md text-label-md font-semibold border border-primary shadow-xs flex items-center gap-1.5 transition-all" style="background-color: rgb(252, 42, 42);">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>همه مقالات</span>
+</button>
+<!-- Inactive Chips -->
+<button class="bg-transparent hover:bg-surface-container text-on-surface border border-outline hover:border-secondary/60 px-4 py-2 rounded-full font-label-md text-label-md transition-colors">
+            راهنمای خرید ملک
+          </button>
+<button class="bg-transparent hover:bg-surface-container text-on-surface border border-outline hover:border-secondary/60 px-4 py-2 rounded-full font-label-md text-label-md transition-colors">
+            فروش ملک
+          </button>
+<button class="bg-transparent hover:bg-surface-container text-on-surface border border-outline hover:border-secondary/60 px-4 py-2 rounded-full font-label-md text-label-md transition-colors">
+            رهن و اجاره
+          </button>
+<button class="bg-transparent hover:bg-surface-container text-on-surface border border-outline hover:border-secondary/60 px-4 py-2 rounded-full font-label-md text-label-md transition-colors">
+            سرمایه‌گذاری ملکی
+          </button>
+<button class="bg-transparent hover:bg-surface-container text-on-surface border border-outline hover:border-secondary/60 px-4 py-2 rounded-full font-label-md text-label-md transition-colors">
+            حقوق و قوانین
+          </button>
+<button class="bg-transparent hover:bg-surface-container text-on-surface border border-outline hover:border-secondary/60 px-4 py-2 rounded-full font-label-md text-label-md transition-colors">
+            معماری و دکوراسیون
+          </button>
+<button class="bg-transparent hover:bg-surface-container text-on-surface border border-outline hover:border-secondary/60 px-4 py-2 rounded-full font-label-md text-label-md transition-colors">
+            راهنمای مالک و مستأجر
+          </button>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 6. ARTICLES GRID (آخرین مقالات - 6 CARDS) -->
+<!-- ========================================================================= -->
+<section class="max-w-[1320px] mx-auto px-6 md:px-12 py-10">
+<!-- Section Title & Narrative -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<div>
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm font-semibold mb-1">
+<span class="material-symbols-outlined text-sm" data-icon="library_books">library_books</span>
+<span>آرشیو مقالات تحلیلی</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">آخرین مقالات</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">مطالب کاربردی برای شناخت بهتر بازار ملک و تصمیم‌گیری آگاهانه‌تر.</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant">مرتب‌سازی:</span>
+<select class="bg-surface border border-outline text-on-surface font-label-md text-label-md rounded px-3 py-1.5 focus:border-primary focus:ring-0">
+<option>جدیدترین مقالات</option>
+<option>پربازدیدترین‌ها</option>
+<option>منتخب سرمایه‌گذاران</option>
+</select>
+</div>
+</div>
+<!-- 3-Column Bento/Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+<!-- CARD 1 -->
+<article class="bg-surface rounded border border-outline shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between group overflow-hidden">
+<div>
+<!-- Visual -->
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="A modern architectural apartment building facade with warm limestone cladding, generous glass balconies, and elegant evening architectural accent lighting in an upscale northern district of Tehran. Clean symmetrical composition reflecting institutional permanence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHdocszdFqbuANN-Lceiw5IClGwASNI7W9QyPDJ6tw3mzPFmWA3JpcVqDsLBYAtCZvYAfhh9IO3Gt0H36JjYRJjo_UeK4UQODwzTWFNJltzuNB2nrCREGB6TWQ3GpuoYT48QkxiWOaiGKRPZskDL7Yw6y40uqT89xFfgZ5mUyNHJWhJUhRP2xu-6c4fiRkTEPUkZd-VEYVTI841ZRDtMVOUzxwy3eZfnDrlTuZCO0sM61oz_kwYG_4IQ"/>
+<div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded border border-outline/70">
+<span class="font-label-sm text-label-sm text-primary font-semibold">راهنمای خرید ملک</span>
+</div>
+</div>
+<!-- Body -->
+<div class="p-6">
+<div class="flex items-center gap-3 font-label-sm text-label-sm text-on-surface-variant mb-2.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="calendar_today">calendar_today</span>
+                  ۱۵ مهر ۱۴۰۵
+                </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="schedule">schedule</span>
+                  ۶ دقیقه مطالعه
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold group-hover:text-primary-container transition-colors mb-3 leading-snug">
+                پیش از خرید آپارتمان، چه نکاتی را باید بررسی کنیم؟
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed">
+                مهم‌ترین نکات مربوط به موقعیت، امکانات، مدارک و شرایط ملک را پیش از تصمیم‌گیری بررسی کنید.
+              </p>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-6 pb-6 pt-3 border-t border-outline/40 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-medium">مشاوره تخصصی خرید</span>
+<a class="font-label-md text-label-md font-semibold text-primary group-hover:text-secondary flex items-center gap-1 transition-colors" href="#">
+<span>مطالعه مقاله</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover:-translate-x-1" data-icon="arrow_back">arrow_back</span>
+</a>
+</div>
+</article>
+<!-- CARD 2 -->
+<article class="bg-surface rounded border border-outline shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between group overflow-hidden">
+<div>
+<!-- Visual -->
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="An elegant, spacious living room in an upscale residential rental property with bespoke minimalist furniture, warm ivory walls, floor-to-ceiling drapery, and polished parquet flooring. High-end residential architecture styling with refined daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA67WESFq1Gl53DgegnY2EEZT8aGoAf4H7fWdBqvi8B41iGWMhfsHk63x56giApKQG-cTGZbrns0IlNBGYW4LzGqhLkbBdUxFyfJZQDelo3paP86s9oPG09jqvOwGKNHntkh6GJsfS5YFAyAIQ-3gbWXq9KxcS3YpYwpS-Fp-hKJvuzqIjlDMwhf7ZGcehiekAOSTAcjT95EMZsQaU_tdGvSQPrKmpPkFlua8tvGkcTwzujtHZWJakODg"/>
+<div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded border border-outline/70">
+<span class="font-label-sm text-label-sm text-primary font-semibold">رهن و اجاره</span>
+</div>
+</div>
+<!-- Body -->
+<div class="p-6">
+<div class="flex items-center gap-3 font-label-sm text-label-sm text-on-surface-variant mb-2.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="calendar_today">calendar_today</span>
+                  ۱۲ مهر ۱۴۰۵
+                </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="schedule">schedule</span>
+                  ۵ دقیقه مطالعه
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold group-hover:text-primary-container transition-colors mb-3 leading-snug">
+                راهنمای انتخاب خانه مناسب برای اجاره
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed">
+                چطور بودجه، موقعیت، دسترسی و شرایط قرارداد را در انتخاب خانه اجاره‌ای در نظر بگیریم؟
+              </p>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-6 pb-6 pt-3 border-t border-outline/40 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-medium">چک‌لیست قرارداد اجاره</span>
+<a class="font-label-md text-label-md font-semibold text-primary group-hover:text-secondary flex items-center gap-1 transition-colors" href="#">
+<span>مطالعه مقاله</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover:-translate-x-1" data-icon="arrow_back">arrow_back</span>
+</a>
+</div>
+</article>
+<!-- CARD 3 -->
+<article class="bg-surface rounded border border-outline shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between group overflow-hidden">
+<div>
+<!-- Visual -->
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Modern architectural blueprint layouts, financial analytical charts on a refined walnut desk beside a scale model of a high-rise residential complex. Subdued lighting and high prestige commercial real estate investment curation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9jW42DHy2v03Io6momSw-A7gNR_XCPEqgRDfnQqtkMjR8DEtZYRNyaUKBtDQderrKI1tSxMxBEwxM7mEfIgdU1viZENSO3t-BGVU-ZuspgEcTwPxbpteJedzSRmGKggYdCpgA6gmrS1EFT3r4du4lQcZ5-1CuR2om2VdAAZmWLl22gEJpPgvnDAKWiRBkwdbcvAQh28vF_9Wj_7PASjvbBJT6GT3gQqfP0GtonZ3QN1VB1CR6fUudhQ"/>
+<div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded border border-secondary/50">
+<span class="font-label-sm text-label-sm text-primary font-semibold">سرمایه‌گذاری ملکی</span>
+</div>
+</div>
+<!-- Body -->
+<div class="p-6">
+<div class="flex items-center gap-3 font-label-sm text-label-sm text-on-surface-variant mb-2.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="calendar_today">calendar_today</span>
+                  ۸ مهر ۱۴۰۵
+                </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="schedule">schedule</span>
+                  ۷ دقیقه مطالعه
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold group-hover:text-primary-container transition-colors mb-3 leading-snug">
+                چه عواملی بر ارزش یک ملک تأثیر می‌گذارند؟
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed">
+                با مهم‌ترین عوامل مؤثر بر ارزش‌گذاری ملک، از موقعیت مکانی تا امکانات و شرایط ساختمان آشنا شوید.
+              </p>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-6 pb-6 pt-3 border-t border-outline/40 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-medium">ارزش‌گذاری و تحلیل بازار</span>
+<a class="font-label-md text-label-md font-semibold text-primary group-hover:text-secondary flex items-center gap-1 transition-colors" href="#">
+<span>مطالعه مقاله</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover:-translate-x-1" data-icon="arrow_back">arrow_back</span>
+</a>
+</div>
+</article>
+<!-- CARD 4 -->
+<article class="bg-surface rounded border border-outline shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between group overflow-hidden">
+<div>
+<!-- Visual -->
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="An upscale private notary and real estate legal consultation room featuring leather bound journals, brass desk lamp, and crisp deed documentation on polished mahogany surface. Serious institutional permanence and security." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu4nRr6889_JdL0rqcg9MOrN6LHwSVX8zerWscVIyJrm_6jlhyh-D8WoYxR2alXswjv9aKJS9_s9D6YodhKyGlBshNgMExHAwHmjnMJkTYEZxKNa0ftMoOvd5FVXaLQGTC0M9bWYJKjq_rQjrIr1yQEpg4Pn7EkeuIesfR-Z907N1bNBWrOcYGDP_5RCgYnnbO3fC6WmNCFRRwSmweARJvk61C_RGX0qas60ssRe-2BaPMgT-CvRBxLQ"/>
+<div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded border border-outline/70">
+<span class="font-label-sm text-label-sm text-primary font-semibold">حقوق و قوانین</span>
+</div>
+</div>
+<!-- Body -->
+<div class="p-6">
+<div class="flex items-center gap-3 font-label-sm text-label-sm text-on-surface-variant mb-2.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="calendar_today">calendar_today</span>
+                  ۵ مهر ۱۴۰۵
+                </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="schedule">schedule</span>
+                  ۸ دقیقه مطالعه
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold group-hover:text-primary-container transition-colors mb-3 leading-snug">
+                نکات مهم قرارداد اجاره که باید بدانید
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed">
+                پیش از امضای قرارداد، با بندهای مهم و مواردی که نیاز به توجه بیشتری دارند آشنا شوید.
+              </p>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-6 pb-6 pt-3 border-t border-outline/40 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-medium">مشاوره حقوقی معتبر</span>
+<a class="font-label-md text-label-md font-semibold text-primary group-hover:text-secondary flex items-center gap-1 transition-colors" href="#">
+<span>مطالعه مقاله</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover:-translate-x-1" data-icon="arrow_back">arrow_back</span>
+</a>
+</div>
+</article>
+<!-- CARD 5 -->
+<article class="bg-surface rounded border border-outline shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between group overflow-hidden">
+<div>
+<!-- Visual -->
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Sunlit architectural luxury dining and living corridor with high ceilings, arched architectural framing, subtle champagne gold accents, and abundant natural light filtering across cream-colored walls and indoor olive tree." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn-EdGC3G3zNU7gl0gPWfqjrh6c0QuV6coICt1mOgBKUCu_33HGVkxSD6HjXZk-7fKmP70LzA2pLBBfiG5alTxpFteVMQ_nbbvgOircjf3mV4Af88tS6abCkGOrVRTcXUWpX6JydYLBLw3JR-4cLch2jey7wKZrdirFQU5lOvHQHm0d4rl-ZS1_V96Y0ITR4RDoy04rYjOjuUqkJZlapL3sNxrL3ZFQ4xLlK9r-803TZ7tUSw39oJGrw"/>
+<div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded border border-outline/70">
+<span class="font-label-sm text-label-sm text-primary font-semibold">معماری و دکوراسیون</span>
+</div>
+</div>
+<!-- Body -->
+<div class="p-6">
+<div class="flex items-center gap-3 font-label-sm text-label-sm text-on-surface-variant mb-2.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="calendar_today">calendar_today</span>
+                  ۱ مهر ۱۴۰۵
+                </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="schedule">schedule</span>
+                  ۴ دقیقه مطالعه
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold group-hover:text-primary-container transition-colors mb-3 leading-snug">
+                چگونه نور طبیعی، فضای خانه را دلپذیرتر می‌کند؟
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed">
+                با چند نکته ساده درباره نورگیری، چیدمان و انتخاب فضاهای مناسب برای زندگی روزمره آشنا شوید.
+              </p>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-6 pb-6 pt-3 border-t border-outline/40 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-medium">طراحی داخلی مدرن</span>
+<a class="font-label-md text-label-md font-semibold text-primary group-hover:text-secondary flex items-center gap-1 transition-colors" href="#">
+<span>مطالعه مقاله</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover:-translate-x-1" data-icon="arrow_back">arrow_back</span>
+</a>
+</div>
+</article>
+<!-- CARD 6 -->
+<article class="bg-surface rounded border border-outline shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between group overflow-hidden">
+<div>
+<!-- Visual -->
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Two professional real estate consultants reviewing property contracts calmly in an elegant architectural advisory suite with views of city greenery. Deep navy suits, warm ambient architectural lighting, dignified and cordial interaction." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3Jr7kDctaIyqtidAZuT1yiNDAne9ePoZlVTJgGSbua3EAbeNg8oj3VCT_HUcJts6-zZu2UkSNzgY0fLEA3bYFBL3Tvh6LxMgGovp_PtwVg9icko4IFadBuUlSypJ1W76b5CN0bRzWGpxeubdiPK9v-JOM_AzehjcGFB96wdrhTomr2z0p8o-ogwuahsH8BRxhblFDphFjfSwmcSUdZQap6z1LtPXbVvStr8mHYu9vwhUo8ZKb6DGRrQ"/>
+<div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded border border-outline/70">
+<span class="font-label-sm text-label-sm text-primary font-semibold">راهنمای مالک و مستأجر</span>
+</div>
+</div>
+<!-- Body -->
+<div class="p-6">
+<div class="flex items-center gap-3 font-label-sm text-label-sm text-on-surface-variant mb-2.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="calendar_today">calendar_today</span>
+                  ۲۸ شهریور ۱۴۰۵
+                </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="schedule">schedule</span>
+                  ۵ دقیقه مطالعه
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold group-hover:text-primary-container transition-colors mb-3 leading-snug">
+                پیش از تمدید قرارداد اجاره چه مواردی را بررسی کنیم؟
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed">
+                از بررسی شرایط قرارداد تا توافق بر سر مبلغ و زمان‌بندی، نکات مهم تمدید اجاره را مرور کنید.
+              </p>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-6 pb-6 pt-3 border-t border-outline/40 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-medium">توافقات و ضوابط</span>
+<a class="font-label-md text-label-md font-semibold text-primary group-hover:text-secondary flex items-center gap-1 transition-colors" href="#">
+<span>مطالعه مقاله</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover:-translate-x-1" data-icon="arrow_back">arrow_back</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 7. REFINED PAGINATION (صفحه‌بندی اصیل) -->
+<!-- ========================================================================= -->
+<section class="max-w-[1320px] mx-auto px-6 md:px-12 py-8">
+<nav aria-label="Pagination" class="flex items-center justify-center gap-2 rtl">
+<!-- Prev -->
+<button class="flex items-center gap-1.5 px-4 py-2.5 rounded bg-surface border border-outline text-on-surface-variant hover:text-primary hover:border-primary font-label-md text-label-md transition-colors shadow-xs">
+<span class="material-symbols-outlined text-lg" data-icon="chevron_right">chevron_right</span>
+<span>صفحه قبل</span>
+</button>
+<!-- Page 1 (Active Navy) -->
+<button class="w-10 h-10 rounded bg-primary text-on-primary font-label-lg text-label-lg font-bold border border-primary shadow-xs" style="background-color: rgb(252, 42, 42);">
+          ۱
+        </button>
+<!-- Page 2 -->
+<button class="w-10 h-10 rounded bg-surface text-on-surface border border-outline hover:border-secondary hover:text-primary font-label-lg text-label-lg font-medium transition-colors shadow-xs">
+          ۲
+        </button>
+<!-- Page 3 -->
+<button class="w-10 h-10 rounded bg-surface text-on-surface border border-outline hover:border-secondary hover:text-primary font-label-lg text-label-lg font-medium transition-colors shadow-xs">
+          ۳
+        </button>
+<!-- Ellipsis -->
+<span class="w-8 text-center text-outline font-bold">...</span>
+<!-- Page 8 -->
+<button class="w-10 h-10 rounded bg-surface text-on-surface border border-outline hover:border-secondary hover:text-primary font-label-lg text-label-lg font-medium transition-colors shadow-xs">
+          ۸
+        </button>
+<!-- Next -->
+<button class="flex items-center gap-1.5 px-4 py-2.5 rounded bg-surface border border-outline text-on-surface-variant hover:text-primary hover:border-primary font-label-md text-label-md transition-colors shadow-xs">
+<span>صفحه بعد</span>
+<span class="material-symbols-outlined text-lg" data-icon="chevron_left">chevron_left</span>
+</button>
+</nav>
+</section>
+<!-- ========================================================================= -->
+<!-- 8. CALL TO ACTION BANNER (پیش از فوتر) -->
+<!-- ========================================================================= -->
+<section class="max-w-[1320px] mx-auto px-6 md:px-12 py-12">
+<div class="relative bg-gradient-to-l from-primary via-primary-container to-primary rounded p-8 md:p-12 text-on-primary border border-secondary/40 shadow-xl overflow-hidden">
+<!-- Subtle Architectural Gold Inset Glow -->
+<div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-right">
+<div class="max-w-2xl space-y-3">
+<div class="inline-flex items-center gap-2 text-secondary font-label-sm text-label-sm font-bold bg-white/10 px-3 py-1 rounded backdrop-blur-xs">
+<span class="material-symbols-outlined text-sm" data-icon="verified_user">verified_user</span>
+<span>همراهی مشاوران مجرب مجتمع امتیاز</span>
+</div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-white tracking-tight">
+              با دنیای ملک آگاهانه‌تر همراه شوید
+            </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container leading-relaxed">
+              مقالات و راهنماهای کاربردی را دنبال کنید تا با دید روشن‌تری درباره خرید، فروش و اجاره ملک تصمیم بگیرید.
+            </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-3.5 shrink-0 w-full lg:w-auto justify-center">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-secondary text-primary font-label-lg text-label-lg font-bold px-7 py-3.5 rounded hover:bg-secondary-fixed transition-all shadow-md active:scale-95" href="#">
+<span>مشاهده املاک</span>
+<span class="material-symbols-outlined text-xl" data-icon="real_estate_agent">real_estate_agent</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-white border border-secondary/40 font-label-lg text-label-lg font-semibold px-6 py-3.5 rounded transition-all backdrop-blur-xs" href="#">
+<span>تماس با مجتمع</span>
+<span class="material-symbols-outlined text-xl" data-icon="call">call</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================================================= -->
+<!-- 9. OFFICIAL FOOTER (Exact Approved Design Anchor) -->
+<!-- ========================================================================= -->
+<footer class="bg-tertiary text-on-tertiary border-t border-secondary/20 full-width bottom-0">
+<div class="w-full max-w-[1320px] mx-auto px-6 md:px-12 py-16 rtl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-outline/20">
+<!-- Brand Narrative & Identity (5 cols) -->
+<div class="lg:col-span-5 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded border border-secondary bg-primary flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl" data-icon="domain">domain</span>
+</div>
+<div>
+<span class="font-headline-md text-headline-md font-bold text-on-tertiary block">مجتمع تخصصی املاک امتیاز</span>
+<span class="font-label-sm text-label-sm text-secondary">نخستین مرکز متمرکز صنفی و حقوقی املاک</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-tertiary-container leading-relaxed pl-4">
+            «مجتمع تخصصی املاک امتیاز» به عنوان کانون معتبر مشاوران رسمی و توسعه‌دهندگان برتر، بستری شفاف، قانون‌مند و امن برای کلیه مبادلات، سرمایه‌گذاری‌ها و راهنمایی‌های تحلیلی مسکن فراهم آورده است.
+          </p>
+<div class="pt-2 flex items-center gap-4 text-on-tertiary-container">
+<span class="font-label-sm text-label-sm">واحد نظارت و ارزیابی حقوقی:</span>
+<span class="text-secondary font-bold font-label-sm text-label-sm">مستقر در طبقه اداری</span>
+</div>
+</div>
+<!-- Links Column 1: معرفی و دفاتر (3 cols) -->
+<div class="lg:col-span-3 space-y-3">
+<h4 class="font-title-md text-title-md font-bold text-on-tertiary border-r-2 border-secondary pr-2">
+            بخش‌های مجتمع
+          </h4>
+<ul class="space-y-2.5 font-label-md text-label-md text-on-tertiary-container">
+<li>
+<a class="hover:text-secondary-fixed transition-colors flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-xs text-secondary" data-icon="arrow_left">arrow_left</span>
+                معرفی مجتمع و رویکردها
+              </a>
+</li>
+<li>
+<a class="hover:text-secondary-fixed transition-colors flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-xs text-secondary" data-icon="arrow_left">arrow_left</span>
+                دفاتر املاک مستقر
+              </a>
+</li>
+<li>
+<a class="hover:text-secondary-fixed transition-colors flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-xs text-secondary" data-icon="arrow_left">arrow_left</span>
+                فرصت‌های سرمایه‌گذاری و مشارکت
+              </a>
+</li>
+<li>
+<a class="hover:text-secondary-fixed transition-colors flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-xs text-secondary" data-icon="arrow_left">arrow_left</span>
+                املاک لوکس و پنت‌هاوس‌ها
+              </a>
+</li>
+</ul>
+</div>
+<!-- Links Column 2: راهنما و تماس (4 cols) -->
+<div class="lg:col-span-4 space-y-3">
+<h4 class="font-title-md text-title-md font-bold text-on-tertiary border-r-2 border-secondary pr-2">
+            ارتباط مستقیم و مراجع
+          </h4>
+<ul class="space-y-2.5 font-label-md text-label-md text-on-tertiary-container">
+<li>
+<a class="hover:text-secondary-fixed transition-colors flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-xs text-secondary" data-icon="arrow_left">arrow_left</span>
+                قوانین، مقررات و حریم خصوصی
+              </a>
+</li>
+<li>
+<a class="hover:text-secondary-fixed transition-colors flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-xs text-secondary" data-icon="arrow_left">arrow_left</span>
+                تماس با مدیریت مجتمع و پذیرش
+              </a>
+</li>
+</ul>
+<!-- Contact Detail Cards in Footer -->
+<div class="mt-4 p-4 rounded bg-tertiary-container/80 border border-outline/20 space-y-2">
+<div class="flex items-center justify-between text-on-tertiary-container font-label-sm text-label-sm">
+<span>تلفن تماس دبیرخانه:</span>
+<span class="font-bold text-on-tertiary">۰۲۱-۲۲۰۰۰۰۰۰</span>
+</div>
+<div class="flex items-center justify-between text-on-tertiary-container font-label-sm text-label-sm">
+<span>نشانی:</span>
+<span class="text-on-tertiary">تهران، خیابان ولیعصر، برج امتیاز</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Bottom Copyright -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-right font-body-sm text-body-sm text-on-tertiary-container">
+<p>
+          تمامی حقوق مادی و معنوی این وب‌سایت متعلق به مجتمع تخصصی املاک امتیاز می‌باشد. طراحی شده بر پایه معماری اصیل معاصر.
+        </p>
+<div class="flex items-center gap-4 text-secondary font-label-sm text-label-sm">
+<span>نظارت حقوقی ثبت اسناد</span>
+<span>•</span>
+<span>عضو کانون مشاوران برتر کشور</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
