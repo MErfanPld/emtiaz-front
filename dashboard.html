@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>املاک امتیاز | سامانه مدیریت جامع</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Persian Typography - Vazirmatn -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with CDN Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-container": "#795f2b",
+            "tertiary-fixed-dim": "#c9c6c0",
+            "background": "#f7faf7",
+            "outline-variant": "#c1c8c4",
+            "on-surface-variant": "#414845",
+            "surface-container-high": "#e6e9e5",
+            "error": "#ba1a1a",
+            "surface-bright": "#f7faf7",
+            "on-primary-container": "#81a599",
+            "inverse-primary": "#a9cec2",
+            "on-primary": "#ffffff",
+            "on-surface": "#181c1b",
+            "on-error-container": "#93000a",
+            "surface-dim": "#d8dbd7",
+            "secondary-fixed": "#ffdea5",
+            "on-tertiary-fixed": "#1c1c18",
+            "on-error": "#ffffff",
+            "inverse-surface": "#2d312f",
+            "surface-variant": "#e0e3e0",
+            "primary-fixed": "#c5ebdd",
+            "surface-tint": "#42655b",
+            "secondary": "#745a27",
+            "surface-container-low": "#f1f4f1",
+            "on-tertiary": "#ffffff",
+            "on-background": "#181c1b",
+            "secondary-fixed-dim": "#e4c284",
+            "surface-container-highest": "#e0e3e0",
+            "on-primary-fixed": "#002019",
+            "secondary-container": "#ffdb9b",
+            "surface": "#f7faf7",
+            "on-primary-fixed-variant": "#2b4d43",
+            "primary-container": "#183b32",
+            "tertiary-fixed": "#e5e2db",
+            "error-container": "#ffdad6",
+            "on-secondary": "#ffffff",
+            "on-secondary-fixed": "#261900",
+            "surface-container": "#ecefeb",
+            "tertiary-container": "#353530",
+            "on-tertiary-container": "#9f9d97",
+            "primary": "#00251d",
+            "primary-fixed-dim": "#a9cec2",
+            "on-secondary-fixed-variant": "#5a4311",
+            "inverse-on-surface": "#eef1ee",
+            "on-tertiary-fixed-variant": "#474742",
+            "surface-container-lowest": "#ffffff",
+            "outline": "#717975",
+            "tertiary": "#20201c"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin-mobile": "1.25rem",
+            "space-sm": "0.75rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.375rem",
+            "space-md": "1.25rem",
+            "space-xl": "3rem",
+            "gutter-mobile": "1rem",
+            "margin": "3rem",
+            "space-lg": "2rem"
+          },
+          "fontFamily": {
+            "display-hero": ["Vazirmatn"],
+            "headline-lg": ["Vazirmatn"],
+            "title-md": ["Vazirmatn"],
+            "headline-sm": ["Vazirmatn"],
+            "headline-lg-mobile": ["Vazirmatn"],
+            "display-hero-mobile": ["Vazirmatn"],
+            "body-md": ["Vazirmatn"],
+            "label-sm": ["Vazirmatn"],
+            "body-lg": ["Vazirmatn"],
+            "label-lg": ["Vazirmatn"],
+            "label-md": ["Vazirmatn"],
+            "headline-md": ["Vazirmatn"],
+            "body-sm": ["Vazirmatn"]
+          },
+          "fontSize": {
+            "display-hero": ["48px", { "lineHeight": "68px", "fontWeight": "800" }],
+            "headline-lg": ["36px", { "lineHeight": "52px", "fontWeight": "700" }],
+            "title-md": ["18px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "30px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "38px", "fontWeight": "700" }],
+            "display-hero-mobile": ["32px", { "lineHeight": "48px", "fontWeight": "800" }],
+            "body-md": ["14px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-sm": ["10px", { "lineHeight": "16px", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "18px", "fontWeight": "500" }],
+            "headline-md": ["24px", { "lineHeight": "36px", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "20px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #f7faf7;
+      color: #181c1b;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      line-height: 1;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 4px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background-color: #c1c8c4;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col selection:bg-secondary selection:text-on-secondary">
+<!-- Desktop Fixed SideNavBar (JSON Component execution) -->
+<aside class="fixed top-0 right-0 h-screen w-72 z-40 bg-surface-container-lowest border-l border-outline-variant shadow-sm flex flex-col justify-between">
+<!-- Header Branding -->
+<div class="p-6 border-b border-outline-variant/40">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-primary-fixed flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-title-md">domain</span>
+</div>
+<div>
+<h1 class="text-headline-sm font-headline-sm text-primary tracking-tight">املاک امتیاز</h1>
+<p class="text-body-sm font-body-sm text-on-surface-variant">سامانه مدیریت جامع</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container border border-secondary/30">
+          پنل مدیریت
+        </span>
+</div>
+</div>
+<!-- Navigation Tab Links (Strict match to JSON tabs) -->
+<div class="flex-1 overflow-y-auto px-4 py-4 space-y-1 custom-scroll">
+<!-- 1. داشبورد (Active) -->
+<a class="flex items-center gap-3 px-4 py-3 bg-primary text-on-primary rounded-lg font-bold shadow-sm relative group" href="#">
+<span class="material-symbols-outlined text-inverse-primary" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="text-label-lg font-label-lg flex-1">داشبورد</span>
+<span class="w-1.5 h-4 rounded-full bg-secondary"></span>
+</a>
+<!-- 2. مدیریت املاک -->
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-outline">real_estate_agent</span>
+<span class="text-label-lg font-label-lg">مدیریت املاک</span>
+</a>
+<!-- 3. دفاتر املاک -->
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-outline">domain</span>
+<span class="text-label-lg font-label-lg">دفاتر املاک</span>
+</a>
+<!-- 4. مدیریت مقالات -->
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-outline">article</span>
+<span class="text-label-lg font-label-lg">مدیریت مقالات</span>
+</a>
+<!-- 5. دسته‌بندی مقالات -->
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-outline">category</span>
+<span class="text-label-lg font-label-lg">دسته‌بندی مقالات</span>
+</a>
+<!-- 6. درخواست‌های ارتباطی -->
+<a class="flex items-center justify-between px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors duration-150" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline">contact_phone</span>
+<span class="text-label-lg font-label-lg">درخواست‌های ارتباطی</span>
+</div>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed">۱۸</span>
+</a>
+<!-- 7. رسانه‌ها و تصاویر -->
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-outline">photo_library</span>
+<span class="text-label-lg font-label-lg">رسانه‌ها و تصاویر</span>
+</a>
+<!-- 8. مدیریت کاربران -->
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-outline">group</span>
+<span class="text-label-lg font-label-lg">مدیریت کاربران</span>
+</a>
+<!-- 9. تنظیمات سایت -->
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-outline">settings</span>
+<span class="text-label-lg font-label-lg">تنظیمات سایت</span>
+</a>
+</div>
+<!-- Sidebar Bottom: Admin Profile & Actions -->
+<div class="p-4 border-t border-outline-variant/40 bg-surface-container-low/50">
+<div class="flex items-center gap-3 p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/60 shadow-sm mb-3">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-md ring-2 ring-secondary/30">
+          م‌س
+        </div>
+<div class="flex-1 overflow-hidden">
+<p class="text-label-lg font-label-lg text-on-surface truncate">مدیر سیستم</p>
+<p class="text-body-sm font-body-sm text-secondary">مدیر کل مجموعه</p>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm pt-1">
+<a class="flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors py-1 px-2 rounded" href="#">
+<span class="material-symbols-outlined text-outline text-title-md">help</span>
+<span>پشتیبانی</span>
+</a>
+<a class="flex items-center gap-1.5 text-error hover:bg-error-container/40 transition-colors py-1 px-2 rounded" href="#">
+<span class="material-symbols-outlined text-error text-title-md">logout</span>
+<span>خروج از حساب</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- TopNavBar (Fixed top relative to main area) -->
+<header class="sticky top-0 z-30 w-full bg-surface-container-lowest border-b border-outline-variant shadow-sm mr-72 flex items-center justify-between h-16 px-8 max-w-[calc(100%-18rem)]">
+<!-- Breadcrumbs & Context Title -->
+<div class="flex items-center gap-3">
+<button class="p-2 text-on-surface-variant hover:bg-surface-container rounded-lg transition-colors active:scale-95" title="تغییر وضعیت نوار کناری">
+<span class="material-symbols-outlined">menu_open</span>
+</button>
+<div class="h-4 w-px bg-outline-variant"></div>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<span>داشبورد</span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-bold">نمای کلی</span>
+</div>
+</div>
+<!-- Actions & Profile Info -->
+<div class="flex items-center gap-4">
+<!-- Search Input Container -->
+<div class="relative hidden lg:flex items-center">
+<span class="material-symbols-outlined absolute right-3 text-outline text-title-md pointer-events-none">search</span>
+<input class="pr-10 pl-4 py-1.5 rounded-lg border border-outline-variant/80 bg-surface-container-low text-body-sm font-body-sm text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-secondary/40 w-64 transition-all" placeholder="جستجو در املاک، مقالات، کد ملک..." type="text"/>
+</div>
+<!-- Quick Action CTA -->
+<button class="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 bg-primary-container text-on-primary rounded-lg text-label-md font-label-md hover:bg-primary transition-all duration-150 active:scale-95 shadow-sm border border-secondary/40">
+<span class="material-symbols-outlined text-title-md">add_circle</span>
+<span>افزودن سریع</span>
+</button>
+<!-- Notification Action -->
+<button class="relative p-2 text-on-surface-variant hover:bg-surface-container rounded-lg transition-colors duration-150 active:scale-95">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span>
+</button>
+<!-- Help Action -->
+<button class="p-2 text-on-surface-variant hover:bg-surface-container rounded-lg transition-colors duration-150 active:scale-95">
+<span class="material-symbols-outlined">help</span>
+</button>
+<div class="h-6 w-px bg-outline-variant"></div>
+<!-- Admin dropdown profile trigger -->
+<button class="flex items-center gap-2.5 p-1 rounded-lg hover:bg-surface-container transition-colors active:scale-95">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-label-sm border border-secondary">
+          مد
+        </div>
+<div class="hidden md:flex flex-col text-right">
+<span class="text-label-md font-label-md text-on-surface">مدیر ارشد</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">سامانه امتیاز</span>
+</div>
+<span class="material-symbols-outlined text-outline text-body-md">expand_more</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas (RTL Flow, Desktop margins) -->
+<main class="mr-72 flex-1 p-8 space-y-8 max-w-[calc(100%-18rem)]">
+<!-- 4. Welcome & Status Banner -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4 relative overflow-hidden">
+<!-- Champagne Gold subtle top hairline accent -->
+<div class="absolute top-0 right-0 left-0 h-1 bg-gradient-to-l from-secondary via-secondary-container to-transparent"></div>
+<div class="space-y-1">
+<div class="flex items-center gap-3">
+<h2 class="text-headline-md font-headline-md text-primary tracking-tight">خوش آمدید، مدیر عزیز</h2>
+<span class="px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed border border-primary-fixed-dim">
+            مرکز کنترل زنده
+          </span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant">
+          در این بخش می‌توانید وضعیت کلی محتوا و اطلاعات وب‌سایت را بررسی کنید.
+        </p>
+</div>
+<div class="flex items-center gap-3 shrink-0 bg-surface-container-low px-4 py-2.5 rounded-lg border border-outline-variant/60">
+<span class="material-symbols-outlined text-secondary text-title-md">calendar_today</span>
+<div class="text-right">
+<p class="text-label-sm font-label-sm text-on-surface-variant">تاریخ روز</p>
+<p class="text-label-lg font-label-lg text-primary font-bold">سه‌شنبه، ۲۲ مهر ۱۴۰۵</p>
+</div>
+</div>
+</div>
+<!-- 5. Overview Statistics Cards (6 summary cards in responsive grid) -->
+<section>
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-title-md font-title-md text-primary flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          خلاصه وضعیت سامانه
+        </h3>
+<span class="text-body-sm font-body-sm text-on-surface-variant">بروزرسانی شده ۵ دقیقه پیش</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+<!-- Card 1: کل املاک -->
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between mb-3">
+<span class="text-body-sm font-body-sm text-on-surface-variant">کل املاک</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-low text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-title-md">domain</span>
+</div>
+</div>
+<div class="text-headline-md font-headline-md text-primary mb-1 tracking-tight">۱۲۸</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            املاک ثبت‌شده
+          </div>
+</div>
+<!-- Card 2: املاک منتشرشده -->
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between mb-3">
+<span class="text-body-sm font-body-sm text-on-surface-variant">املاک منتشرشده</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-low text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-title-md">check_circle</span>
+</div>
+</div>
+<div class="text-headline-md font-headline-md text-primary mb-1 tracking-tight">۹۶</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            قابل مشاهده در سایت
+          </div>
+</div>
+<!-- Card 3: دفاتر فعال -->
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between mb-3">
+<span class="text-body-sm font-body-sm text-on-surface-variant">دفاتر فعال</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-low text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-title-md">business</span>
+</div>
+</div>
+<div class="text-headline-md font-headline-md text-primary mb-1 tracking-tight">۱۲</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            دفاتر معرفی‌شده
+          </div>
+</div>
+<!-- Card 4: مقالات -->
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between mb-3">
+<span class="text-body-sm font-body-sm text-on-surface-variant">مقالات</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-low text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-title-md">article</span>
+</div>
+</div>
+<div class="text-headline-md font-headline-md text-primary mb-1 tracking-tight">۴۲</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            مقالات ثبت‌شده
+          </div>
+</div>
+<!-- Card 5: درخواست‌های جدید -->
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between mb-3">
+<span class="text-body-sm font-body-sm text-on-surface-variant">درخواست‌های جدید</span>
+<div class="w-9 h-9 rounded-lg bg-secondary-fixed/40 text-secondary flex items-center justify-center group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-title-md">mark_email_unread</span>
+</div>
+</div>
+<div class="text-headline-md font-headline-md text-secondary mb-1 tracking-tight">۱۸</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+            نیازمند بررسی
+          </div>
+</div>
+<!-- Card 6: رسانه‌ها -->
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between mb-3">
+<span class="text-body-sm font-body-sm text-on-surface-variant">رسانه‌ها</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-low text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-title-md">photo_library</span>
+</div>
+</div>
+<div class="text-headline-md font-headline-md text-primary mb-1 tracking-tight">۲۴۶</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            تصاویر و فایل‌ها
+          </div>
+</div>
+</div>
+</section>
+<!-- 6. Quick Actions Section («دسترسی سریع») -->
+<section>
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-title-md font-title-md text-primary flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          دسترسی سریع و اقدامات اجرایی
+        </h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Action 1: افزودن ملک جدید -->
+<a class="bg-surface-container-lowest p-4 rounded-lg border border-outline-variant shadow-sm hover:border-secondary hover:shadow-md transition-all flex items-center gap-3.5 group" href="#">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-inner group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-headline-sm">add_home</span>
+</div>
+<div class="flex-1">
+<h4 class="text-label-lg font-label-lg text-primary group-hover:text-secondary transition-colors">افزودن ملک جدید</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">ثبت اطلاعات یک ملک</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-[-3px] transition-transform">chevron_left</span>
+</a>
+<!-- Action 2: افزودن مقاله -->
+<a class="bg-surface-container-lowest p-4 rounded-lg border border-outline-variant shadow-sm hover:border-secondary hover:shadow-md transition-all flex items-center gap-3.5 group" href="#">
+<div class="w-12 h-12 rounded-lg bg-surface-container text-primary flex items-center justify-center border border-outline-variant group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-headline-sm">post_add</span>
+</div>
+<div class="flex-1">
+<h4 class="text-label-lg font-label-lg text-primary group-hover:text-secondary transition-colors">افزودن مقاله</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">انتشار محتوای جدید</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-[-3px] transition-transform">chevron_left</span>
+</a>
+<!-- Action 3: مدیریت دفاتر -->
+<a class="bg-surface-container-lowest p-4 rounded-lg border border-outline-variant shadow-sm hover:border-secondary hover:shadow-md transition-all flex items-center gap-3.5 group" href="#">
+<div class="w-12 h-12 rounded-lg bg-surface-container text-primary flex items-center justify-center border border-outline-variant group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-headline-sm">storefront</span>
+</div>
+<div class="flex-1">
+<h4 class="text-label-lg font-label-lg text-primary group-hover:text-secondary transition-colors">مدیریت دفاتر</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">بررسی اطلاعات دفاتر املاک</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-[-3px] transition-transform">chevron_left</span>
+</a>
+<!-- Action 4: مشاهده درخواست‌ها -->
+<a class="bg-surface-container-lowest p-4 rounded-lg border border-outline-variant shadow-sm hover:border-secondary hover:shadow-md transition-all flex items-center gap-3.5 group" href="#">
+<div class="w-12 h-12 rounded-lg bg-surface-container text-primary flex items-center justify-center border border-outline-variant group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-headline-sm">inbox</span>
+</div>
+<div class="flex-1">
+<h4 class="text-label-lg font-label-lg text-primary group-hover:text-secondary transition-colors">مشاهده درخواست‌ها</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">بررسی پیام‌های دریافتی</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-[-3px] transition-transform">chevron_left</span>
+</a>
+</div>
+</section>
+<!-- 7. Main Structured Split Data Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Column A (Wide, ~65% -> 8 cols of 12) -->
+<section class="lg:col-span-8 space-y-6">
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm overflow-hidden">
+<!-- Table Header / Title Row -->
+<div class="p-5 border-b border-outline-variant flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<h3 class="text-title-md font-title-md text-primary">آخرین املاک ثبت‌شده</h3>
+</div>
+<a class="text-body-sm font-body-sm text-secondary hover:text-primary transition-colors flex items-center gap-1 font-bold" href="#">
+<span>مشاهده همه املاک</span>
+<span class="material-symbols-outlined text-body-md">arrow_left</span>
+</a>
+</div>
+<!-- Responsive RTL Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-outline-variant text-label-md font-label-md text-on-surface-variant">
+<th class="py-3 px-4">عنوان ملک</th>
+<th class="py-3 px-4">نوع معامله</th>
+<th class="py-3 px-4">قیمت</th>
+<th class="py-3 px-4">دفتر مسئول</th>
+<th class="py-3 px-4">وضعیت</th>
+<th class="py-3 px-4">تاریخ ثبت</th>
+<th class="py-3 px-4 text-center">عملیات</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/60 text-body-sm font-body-sm">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-4 font-bold text-on-surface">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-body-lg">apartment</span>
+</div>
+<span class="truncate max-w-[210px]" title="آپارتمان نوساز با نورگیری عالی">آپارتمان نوساز با نورگیری عالی</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface">فروش</span>
+</td>
+<td class="py-4 px-4 font-bold text-primary">۱۸٫۵ میلیارد تومان</td>
+<td class="py-4 px-4 text-on-surface-variant">املاک آفتاب</td>
+<td class="py-4 px-4">
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed border border-primary-fixed-dim inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                      منتشرشده
+                    </span>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">۲۰ مهر ۱۴۰۵</td>
+<td class="py-4 px-4 text-center">
+<button class="p-1 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors" title="عملیات">
+<span class="material-symbols-outlined text-body-lg">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-4 font-bold text-on-surface">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-body-lg">villa</span>
+</div>
+<span class="truncate max-w-[210px]" title="واحد مسکونی مناسب خانواده">واحد مسکونی مناسب خانواده</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface">فروش</span>
+</td>
+<td class="py-4 px-4 font-bold text-primary">۱۵ میلیارد تومان</td>
+<td class="py-4 px-4 text-on-surface-variant">املاک سپهر</td>
+<td class="py-4 px-4">
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant border border-outline-variant inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                      پیش‌نویس
+                    </span>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">۱۹ مهر ۱۴۰۵</td>
+<td class="py-4 px-4 text-center">
+<button class="p-1 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors" title="عملیات">
+<span class="material-symbols-outlined text-body-lg">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-4 font-bold text-on-surface">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-body-lg">cottage</span>
+</div>
+<span class="truncate max-w-[210px]" title="آپارتمان مبله در موقعیت مناسب">آپارتمان مبله در موقعیت مناسب</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-secondary-fixed/50 text-on-secondary-fixed">اجاره</span>
+</td>
+<td class="py-4 px-4 font-bold text-primary">۳۵۰ میلیون ودیعه</td>
+<td class="py-4 px-4 text-on-surface-variant">املاک مانا</td>
+<td class="py-4 px-4">
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container border border-secondary/30 inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                      در انتظار بررسی
+                    </span>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">۱۸ مهر ۱۴۰۵</td>
+<td class="py-4 px-4 text-center">
+<button class="p-1 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors" title="عملیات">
+<span class="material-symbols-outlined text-body-lg">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Bottom Bar -->
+<div class="p-4 bg-surface-container-low/40 border-t border-outline-variant flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">نمایش ۳ از ۱۲۸ ملک ثبت‌شده</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded border border-outline-variant bg-surface-container-lowest text-on-surface-variant hover:text-on-surface disabled:opacity-40" disabled="">قبلی</button>
+<button class="px-3 py-1 rounded border border-outline-variant bg-surface-container-lowest text-on-surface-variant hover:text-on-surface">بعدی</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Column B (~35% -> 4 cols of 12) -->
+<section class="lg:col-span-4 space-y-6">
+<!-- Panel 1: وضعیت محتوای سایت (Content Health Panel) -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-5 shadow-sm space-y-5">
+<div class="flex items-center justify-between border-b border-outline-variant/60 pb-3">
+<h3 class="text-title-md font-title-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-md">speed</span>
+              وضعیت محتوای سایت
+            </h3>
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">سلامت سیستم</span>
+</div>
+<div class="space-y-4">
+<!-- Metric 1 -->
+<div>
+<div class="flex justify-between items-center text-label-md font-label-md mb-1.5">
+<span class="text-on-surface">املاک منتشرشده</span>
+<span class="font-bold text-primary">۷۵٪</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-primary-container h-2 rounded-full" style="width: 75%"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div>
+<div class="flex justify-between items-center text-label-md font-label-md mb-1.5">
+<span class="text-on-surface">مقالات منتشرشده</span>
+<span class="font-bold text-secondary">۸۰٪</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-2 rounded-full" style="width: 80%"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div>
+<div class="flex justify-between items-center text-label-md font-label-md mb-1.5">
+<span class="text-on-surface">دفاتر دارای اطلاعات کامل</span>
+<span class="font-bold text-primary">۹۰٪</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-primary-container h-2 rounded-full" style="width: 90%"></div>
+</div>
+</div>
+</div>
+<p class="text-label-sm font-label-sm text-outline pt-2 border-t border-outline-variant/40 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-body-md">info</span>
+            شاخص‌های نمونه آماری سامانه
+          </p>
+</div>
+<!-- Panel 2: آخرین درخواست‌های ارتباطی -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-5 shadow-sm space-y-4">
+<div class="flex items-center justify-between border-b border-outline-variant/60 pb-3">
+<h3 class="text-title-md font-title-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-md">forum</span>
+              آخرین درخواست‌های ارتباطی
+            </h3>
+<a class="text-label-sm font-label-sm text-secondary hover:text-primary font-bold" href="#">مشاهده همه</a>
+</div>
+<div class="space-y-3">
+<!-- Inbound Request 1 -->
+<div class="p-3 rounded-lg border border-outline-variant/80 bg-surface-container-low/30 hover:border-secondary/60 transition-colors">
+<div class="flex items-center justify-between mb-1.5">
+<span class="text-label-lg font-label-lg text-primary">علی رضایی</span>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed border border-primary-fixed-dim">
+                  جدید
+                </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface mb-2">درخواست مشاوره خرید ملک</p>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline pt-1 border-t border-outline-variant/40">
+<span>۲۲ مهر ۱۴۰۵</span>
+<button class="text-secondary hover:text-primary font-bold text-label-sm font-label-sm">پاسخ و بررسی</button>
+</div>
+</div>
+<!-- Inbound Request 2 -->
+<div class="p-3 rounded-lg border border-outline-variant/80 bg-surface-container-low/30 hover:border-secondary/60 transition-colors">
+<div class="flex items-center justify-between mb-1.5">
+<span class="text-label-lg font-label-lg text-primary">سارا محمدی</span>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container border border-secondary/30">
+                  در حال پیگیری
+                </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface mb-2">پرسش درباره معرفی دفتر</p>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline pt-1 border-t border-outline-variant/40">
+<span>۲۱ مهر ۱۴۰۵</span>
+<button class="text-secondary hover:text-primary font-bold text-label-sm font-label-sm">پاسخ و بررسی</button>
+</div>
+</div>
+<!-- Inbound Request 3 -->
+<div class="p-3 rounded-lg border border-outline-variant/80 bg-surface-container-low/30 hover:border-secondary/60 transition-colors">
+<div class="flex items-center justify-between mb-1.5">
+<span class="text-label-lg font-label-lg text-primary">مهدی کریمی</span>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant border border-outline-variant">
+                  پاسخ داده‌شده
+                </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface mb-2">درخواست اطلاعات یک ملک</p>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline pt-1 border-t border-outline-variant/40">
+<span>۲۰ مهر ۱۴۰۵</span>
+<button class="text-outline hover:text-on-surface font-bold text-label-sm font-label-sm">مشاهده بایگانی</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- 8. System Footer (RTL aligned, padded from right sidebar) -->
+<footer class="mr-72 py-6 px-8 border-t border-outline-variant bg-surface-container-lowest text-on-surface-variant max-w-[calc(100%-18rem)]">
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-body-sm font-body-sm">
+<p class="text-right">سامانه مدیریت متمرکز مجتمع تخصصی املاک امتیاز © ۱۴۰۵ | نگارش ۲.۴</p>
+<div class="flex items-center gap-4 text-label-md font-label-md text-outline">
+<a class="hover:text-primary transition-colors" href="#">راهنمای سامانه</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors" href="#">حریم خصوصی</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors" href="#">وضعیت سرورها</a>
+</div>
+</div>
+</footer>
+</body></html>
