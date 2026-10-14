@@ -633,73 +633,75 @@
 </section>
 </main>
 <!-- FOOTER -->
-<footer class="bg-tertiary text-on-tertiary full-width bottom-0 border-t border-secondary/20 flat">
+<footer class="bg-tertiary dark:bg-surface-container-lowest text-on-tertiary dark:text-on-surface full-width bottom-0 border-t border-secondary/20 dark:border-outline-variant/30 flat no shadows" style="background-color: rgb(10, 10, 10);">
 <div class="w-full max-w-[1320px] mx-auto px-6 md:px-12 py-16 rtl">
-<!-- Footer Top Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
-<!-- Brand Info & Legal Supervision Note (2 cols) -->
-<div class="lg:col-span-2 space-y-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-12">
+<!-- Brand & Mission Column -->
+<div class="lg:col-span-5 text-right">
+<div class="flex items-center gap-3 mb-6"><div class="flex flex-col text-right"><span class="text-headline-md font-headline-md font-bold text-on-tertiary dark:text-on-surface tracking-tight">مجتمع تخصصی املاک امتیاز</span><span class="text-label-sm font-label-sm text-secondary-fixed mt-0.5">توسعه و اعتبار معاملات ملکی در شمال تهران</span></div></div>
+<p class="text-on-tertiary-container text-body-sm font-body-sm leading-relaxed max-w-md mb-6">املاک امتیاز، نخستین مجتمع متمرکز ملکی در شمیرانات؛ گردهم‌آورنده برترین دفاتر کارشناسی و مشاوره‌ای با هدف شفافیت، آرامش و صیانت از سرمایه‌گذاری‌های پایدار.</p>
+<!-- Social Links -->
 <div class="flex items-center gap-3">
-<div class="w-8 h-8 rounded border border-secondary flex items-center justify-center bg-white/5 text-secondary">
-<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">apartment</span>
-</div>
-<span class="text-headline-md font-headline-md font-bold text-on-tertiary tracking-tight">مجتمع تخصصی املاک امتیاز</span>
-</div>
-<p class="text-body-md font-body-md text-on-tertiary-container leading-relaxed">
-            نخستین مرکز متمرکز صنفی و حقوقی املاک کشور؛ بستری استاندارد برای گردهمایی دفاتر معتبر ملکی، وکلای حقوقی، کارشناسان رسمی و سرمایه‌گذاران پایدار.
-          </p>
-<div class="p-3.5 rounded bg-white/5 border border-secondary/30 flex items-start gap-2.5">
-<span class="material-symbols-outlined text-secondary text-lg mt-0.5" style="font-variation-settings: 'FILL' 1;">verified_user</span>
-<p class="text-label-sm font-label-sm text-slate-300 leading-normal">
-              تمامی معاملات و فرآیندهای ثبتی در دفاتر مستقر در این مجتمع، تحت نظارت مستقیم شورای حقوقی و استانداردهای صنفی انجام می‌پذیرد.
-            </p>
+<a class="w-9 h-9 rounded-lg bg-tertiary-container flex items-center justify-center text-on-tertiary-container hover:text-secondary-fixed hover:bg-surface-container-highest/20 transition-all" href="#" title="اینستاگرام" style="background-color: rgb(31, 31, 31); border: 1px solid rgba(255, 255, 255, 0.1);">
+<span class="material-symbols-outlined" data-icon="photo_camera" style="font-size: 20px;">photo_camera</span>
+</a>
+<a class="w-9 h-9 rounded-lg bg-tertiary-container flex items-center justify-center text-on-tertiary-container hover:text-secondary-fixed hover:bg-surface-container-highest/20 transition-all" href="#" title="تلگرام" style="background-color: rgb(31, 31, 31); border: 1px solid rgba(255, 255, 255, 0.1);">
+<span class="material-symbols-outlined" data-icon="send" style="font-size: 20px;">send</span>
+</a>
+<a class="w-9 h-9 rounded-lg bg-tertiary-container flex items-center justify-center text-on-tertiary-container hover:text-secondary-fixed hover:bg-surface-container-highest/20 transition-all" href="#" title="ارتباط مستقیم" style="background-color: rgb(31, 31, 31); border: 1px solid rgba(255, 255, 255, 0.1);">
+<span class="material-symbols-outlined" data-icon="alternate_email" style="font-size: 20px;">alternate_email</span>
+</a>
 </div>
 </div>
-<!-- Navigation Links Columns -->
-<div class="space-y-3">
-<h4 class="text-title-md font-title-md text-white font-semibold">بخش‌های اصلی</h4>
-<ul class="space-y-2 text-body-sm font-body-sm">
-<li><a class="text-on-tertiary-container hover:text-secondary-fixed transition-colors" href="#">معرفی مجتمع و رویکردها</a></li>
-<li><a class="text-on-tertiary-container hover:text-secondary-fixed transition-colors" href="#">دفاتر املاک مستقر</a></li>
-<li><a class="text-on-tertiary-container hover:text-secondary-fixed transition-colors" href="#">املاک لوکس و پنت‌هاوس‌ها</a></li>
-<li><a class="text-on-tertiary-container hover:text-secondary-fixed transition-colors" href="#">مقالات و تحلیل بازار</a></li>
+<!-- Links Column 1: Core Navigation (From JSON) -->
+<div class="lg:col-span-4 text-right">
+<h4 class="text-title-md font-title-md font-bold text-secondary-fixed mb-4">دسترسی و بخش‌های مجتمع</h4>
+<ul class="space-y-3">
+<li class="">
+<a class="text-on-tertiary-container dark:text-on-surface-variant hover:text-secondary-fixed dark:hover:text-secondary-container transition-colors duration-200 text-body-sm font-body-sm" href="#about-complex">معرفی مجتمع و رویکردها</a>
+</li>
+<li class="">
+<a class="text-on-tertiary-container dark:text-on-surface-variant hover:text-secondary-fixed dark:hover:text-secondary-container transition-colors duration-200 text-body-sm font-body-sm" href="#offices">دفاتر املاک مستقر</a>
+</li>
+<li class="">
+<a class="text-on-tertiary-container dark:text-on-surface-variant hover:text-secondary-fixed dark:hover:text-secondary-container transition-colors duration-200 text-body-sm font-body-sm" href="#">فرصت‌های سرمایه‌گذاری و مشارکت</a>
+</li>
+<li class="">
+<a class="text-on-tertiary-container dark:text-on-surface-variant hover:text-secondary-fixed dark:hover:text-secondary-container transition-colors duration-200 text-body-sm font-body-sm" href="#properties">املاک لوکس و پنت‌هاوس‌ها</a>
+</li>
+<li class="">
+<a class="text-on-tertiary-container dark:text-on-surface-variant hover:text-secondary-fixed dark:hover:text-secondary-container transition-colors duration-200 text-body-sm font-body-sm" href="#">قوانین، مقررات و حریم خصوصی</a>
+</li>
+<li class="">
+<a class="text-on-tertiary-container dark:text-on-surface-variant hover:text-secondary-fixed dark:hover:text-secondary-container transition-colors duration-200 text-body-sm font-body-sm" href="#contact">تماس با مدیریت مجتمع و پذیرش</a>
+</li>
 </ul>
 </div>
-<div class="space-y-3">
-<h4 class="text-title-md font-title-md text-white font-semibold">خدمات و فرصت‌ها</h4>
-<ul class="space-y-2 text-body-sm font-body-sm">
-<li><a class="text-on-tertiary-container hover:text-secondary-fixed transition-colors" href="#">فرصت‌های سرمایه‌گذاری و مشارکت</a></li>
-<li><a class="text-on-tertiary-container hover:text-secondary-fixed transition-colors" href="#">مشاوره و تطبیق اسناد ملکی</a></li>
-<li><a class="text-on-tertiary-container hover:text-secondary-fixed transition-colors" href="#">پذیرش دفاتر جدید در مجتمع</a></li>
-<li><a class="text-on-tertiary-container hover:text-secondary-fixed transition-colors" href="#">قوانین، مقررات و حریم خصوصی</a></li>
-</ul>
-</div>
-<div class="space-y-3">
-<h4 class="text-title-md font-title-md text-white font-semibold">ارتباط با مدیریت</h4>
-<p class="text-body-sm font-body-sm text-on-tertiary-container">
-            جهت استعلام دفاتر و هماهنگی جلسات رسمی با مدیریت مجتمع:
-          </p>
-<div class="text-label-md font-label-md text-secondary-fixed space-y-1">
-<div class="flex items-center gap-1.5" dir="ltr">
-<span class="material-symbols-outlined text-sm">phone</span>
-<span>۰۲۱-۲۲۰۰۰۰۰۰</span>
-</div>
-<div class="text-label-sm font-label-sm text-on-tertiary-container">تماس با مدیریت مجتمع و پذیرش</div>
-</div>
-</div>
-</div>
-<!-- Copyright Bottom Bar -->
-<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-body-sm font-body-sm text-on-tertiary-container">
+<!-- Links Column 2: Working Hours & Hotline -->
+<div class="lg:col-span-3 text-right">
+<h4 class="text-title-md font-title-md font-bold text-secondary-fixed mb-4">ارتباط مستقیم</h4>
+<div class="space-y-4 text-body-sm font-body-sm text-on-tertiary-container">
 <div>
-          تمامی حقوق مادی و معنوی این وب‌سایت متعلق به مجتمع تخصصی املاک امتیاز می‌باشد. طراحی شده بر پایه معماری اصیل معاصر.
-        </div>
-<div class="flex items-center gap-6 text-label-sm font-label-sm">
-<a class="hover:text-secondary-fixed transition-colors" href="#">قوانین و ضوابط</a>
-<span class="text-outline/40">•</span>
-<a class="hover:text-secondary-fixed transition-colors" href="#">حفظ حریم خصوصی</a>
-<span class="text-outline/40">•</span>
-<a class="hover:text-secondary-fixed transition-colors" href="#">نقشه سایت</a>
+<span class="block text-outline font-medium mb-1">خط ویژه شبانه‌روزی:</span>
+<span class="text-headline-sm font-headline-sm text-secondary-fixed font-bold font-mono dir-ltr inline-block">۰۲۱-۲۲۰۰۸۸۹۰</span>
 </div>
+<div>
+<span class="block text-outline font-medium mb-1">آدرس دبیرخانه و پذیرش:</span>
+<span class="text-on-tertiary leading-relaxed">تهران، خ فرشته، پلاک ۱۲۰، طبقه همکف، لابی اصلی</span>
+</div>
+<div class="pt-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-tertiary-container text-secondary-fixed text-label-sm font-label-sm" style="background-color: rgb(31, 31, 31); border: 1px solid rgba(255, 255, 255, 0.1);">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="">پذیرش فعال تا ۲۱:۰۰</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Copyright & Architecture Notice -->
+<div class="pt-8 border-t border-secondary/20 dark:border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between text-body-sm font-body-sm text-on-tertiary-container gap-4">
+<p class="text-center sm:text-right">تمامی حقوق مادی و معنوی این وب‌سایت متعلق به مجتمع تخصصی املاک امتیاز می‌باشد. طراحی شده بر پایه معماری اصیل معاصر.</p>
+<span class="text-label-sm font-label-sm text-outline font-mono">EMTIAZ REAL ESTATE COMPLEX © 2025</span>
 </div>
 </div>
 </footer>
